@@ -12,7 +12,7 @@ import 'core/app_route.dart';
 import 'services/fcm_service.dart';
 import 'theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'firebase_options.dart';//configure firebase inorder to fix the error
 import 'services/shared_preferences_services.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 
@@ -21,7 +21,7 @@ final navigatorKey = GlobalKey<NavigatorState>();
 mainCommon() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+    options: DefaultFirebaseOptions.currentPlatform,//configure firebase
   );
   await SharedPreferencesService.i.initialize();
   if (kIsWeb) {
