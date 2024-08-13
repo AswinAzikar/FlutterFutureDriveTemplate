@@ -11,8 +11,7 @@ flutter create --org $org_name $project_name
 
 # Clone repository
 cd $project_name
-git clone https://github.com/lubshad/starter.git
-
+git clone https://github.com/AswinAzikar/FlutterFutureDrivenArc.git
 # Copy files from the starter repository
 cp -r starter/lib .
 cp -r starter/assets .
